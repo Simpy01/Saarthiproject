@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "utm_campaign": "TA_Career_Broad_WA",
+      "spend_inr": 320522.9,
+      "signups": 11847,
+      "paying_users": 994,
+      "cac_per_signup_inr": 27.06,
+      "cac_per_paying_user_inr": 322.46
+    },
+    {
+      "utm_campaign": "TA_Marriage_Lookalike",
+      "spend_inr": 316251.6,
+      "signups": 9459,
+      "paying_users": 788,
+      "cac_per_signup_inr": 33.43,
+      "cac_per_paying_user_inr": 401.33
+    },
+    {
+      "utm_campaign": "TA_Love_Retarget_Web",
+      "spend_inr": 164622.56,
+      "signups": 7016,
+      "paying_users": 555,
+      "cac_per_signup_inr": 23.46,
+      "cac_per_paying_user_inr": 296.62
+    },
+    {
+      "utm_campaign": "TA_Money_Interest_Web",
+      "spend_inr": 139092.21,
+      "signups": 6578,
+      "paying_users": 428,
+      "cac_per_signup_inr": 21.15,
+      "cac_per_paying_user_inr": 324.98
+    },
+    {
+      "utm_campaign": "TA_Festival_Push_App",
+      "spend_inr": 133419.8,
+      "signups": 4603,
+      "paying_users": 237,
+      "cac_per_signup_inr": 28.99,
+      "cac_per_paying_user_inr": 562.95
+    },
+    {
+      "utm_campaign": "TA_Generic_Astro_Wide",
+      "spend_inr": 96300.3,
+      "signups": 10497,
+      "paying_users": 230,
+      "cac_per_signup_inr": 9.17,
+      "cac_per_paying_user_inr": 418.7
+    }
+  ]
+}

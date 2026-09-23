@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "utm_campaign": "TA_Career_Broad_WA",
+      "chat_started": 11043,
+      "profile_started": 7837,
+      "profile_completed": 4443,
+      "paywall_shown": 3951,
+      "payment_initiated": 1377,
+      "payment_success": 963,
+      "overall_conv_pct": 8.72
+    },
+    {
+      "utm_campaign": "TA_Generic_Astro_Wide",
+      "chat_started": 9769,
+      "profile_started": 6906,
+      "profile_completed": 3921,
+      "paywall_shown": 3475,
+      "payment_initiated": 304,
+      "payment_success": 219,
+      "overall_conv_pct": 2.24
+    },
+    {
+      "utm_campaign": "TA_Marriage_Lookalike",
+      "chat_started": 8787,
+      "profile_started": 6249,
+      "profile_completed": 3519,
+      "paywall_shown": 3119,
+      "payment_initiated": 1110,
+      "payment_success": 758,
+      "overall_conv_pct": 8.63
+    },
+    {
+      "utm_campaign": "TA_Love_Retarget_Web",
+      "chat_started": 6534,
+      "profile_started": 4615,
+      "profile_completed": 2646,
+      "paywall_shown": 2361,
+      "payment_initiated": 740,
+      "payment_success": 536,
+      "overall_conv_pct": 8.2
+    },
+    {
+      "utm_campaign": "TA_Money_Interest_Web",
+      "chat_started": 6109,
+      "profile_started": 4370,
+      "profile_completed": 2430,
+      "paywall_shown": 2156,
+      "payment_initiated": 566,
+      "payment_success": 413,
+      "overall_conv_pct": 6.76
+    },
+    {
+      "utm_campaign": "TA_Festival_Push_App",
+      "chat_started": 4268,
+      "profile_started": 3025,
+      "profile_completed": 1693,
+      "paywall_shown": 1487,
+      "payment_initiated": 369,
+      "payment_success": 257,
+      "overall_conv_pct": 6.02
+    }
+  ]
+}

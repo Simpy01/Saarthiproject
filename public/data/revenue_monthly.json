@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "utm_campaign": "TA_Career_Broad_WA",
+      "gross_revenue_inr": 24723601,
+      "refunded_inr": 881359,
+      "net_revenue_inr": 23842242
+    },
+    {
+      "utm_campaign": "TA_Marriage_Lookalike",
+      "gross_revenue_inr": 19684631,
+      "refunded_inr": 830158,
+      "net_revenue_inr": 18854473
+    },
+    {
+      "utm_campaign": "TA_Love_Retarget_Web",
+      "gross_revenue_inr": 15163915,
+      "refunded_inr": 577459,
+      "net_revenue_inr": 14586456
+    },
+    {
+      "utm_campaign": "TA_Money_Interest_Web",
+      "gross_revenue_inr": 11171484,
+      "refunded_inr": 251903,
+      "net_revenue_inr": 10919581
+    },
+    {
+      "utm_campaign": "TA_Generic_Astro_Wide",
+      "gross_revenue_inr": 5612908,
+      "refunded_inr": 202006,
+      "net_revenue_inr": 5410902
+    },
+    {
+      "utm_campaign": "TA_Festival_Push_App",
+      "gross_revenue_inr": 5939845,
+      "refunded_inr": 1131557,
+      "net_revenue_inr": 4808288
+    }
+  ]
+}

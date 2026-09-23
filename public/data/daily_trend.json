@@ -1,0 +1,1123 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "day": "2026-03-01",
+      "spend_inr": "2168.3",
+      "signups": "104",
+      "revenue_inr": "3260"
+    },
+    {
+      "day": "2026-03-02",
+      "spend_inr": "3455.5299999999993",
+      "signups": "147",
+      "revenue_inr": "2752"
+    },
+    {
+      "day": "2026-03-03",
+      "spend_inr": "3152.48",
+      "signups": "137",
+      "revenue_inr": "3260"
+    },
+    {
+      "day": "2026-03-04",
+      "spend_inr": "3095.5200000000004",
+      "signups": "132",
+      "revenue_inr": "4004"
+    },
+    {
+      "day": "2026-03-05",
+      "spend_inr": "3234.8399999999997",
+      "signups": "142",
+      "revenue_inr": "3251"
+    },
+    {
+      "day": "2026-03-06",
+      "spend_inr": "3355.9",
+      "signups": "140",
+      "revenue_inr": "4252"
+    },
+    {
+      "day": "2026-03-07",
+      "spend_inr": "2676.93",
+      "signups": "119",
+      "revenue_inr": "3254"
+    },
+    {
+      "day": "2026-03-08",
+      "spend_inr": "2919.61",
+      "signups": "132",
+      "revenue_inr": "4010"
+    },
+    {
+      "day": "2026-03-09",
+      "spend_inr": "3789.1400000000003",
+      "signups": "162",
+      "revenue_inr": "2755"
+    },
+    {
+      "day": "2026-03-10",
+      "spend_inr": "3723.5600000000004",
+      "signups": "152",
+      "revenue_inr": "4751"
+    },
+    {
+      "day": "2026-03-11",
+      "spend_inr": "3094.8599999999997",
+      "signups": "128",
+      "revenue_inr": "3254"
+    },
+    {
+      "day": "2026-03-12",
+      "spend_inr": "3326.5699999999997",
+      "signups": "146",
+      "revenue_inr": "3759"
+    },
+    {
+      "day": "2026-03-13",
+      "spend_inr": "3212.8300000000004",
+      "signups": "143",
+      "revenue_inr": "3003"
+    },
+    {
+      "day": "2026-03-14",
+      "spend_inr": "3565.3599999999997",
+      "signups": "147",
+      "revenue_inr": "2002"
+    },
+    {
+      "day": "2026-03-15",
+      "spend_inr": "3307.42",
+      "signups": "153",
+      "revenue_inr": "3257"
+    },
+    {
+      "day": "2026-03-16",
+      "spend_inr": "2963.2200000000003",
+      "signups": "131",
+      "revenue_inr": "3499"
+    },
+    {
+      "day": "2026-03-17",
+      "spend_inr": "3642.69",
+      "signups": "171",
+      "revenue_inr": "2256"
+    },
+    {
+      "day": "2026-03-18",
+      "spend_inr": "3447.68",
+      "signups": "153",
+      "revenue_inr": "2002"
+    },
+    {
+      "day": "2026-03-19",
+      "spend_inr": "3539.71",
+      "signups": "158",
+      "revenue_inr": "3508"
+    },
+    {
+      "day": "2026-03-20",
+      "spend_inr": "3984.7700000000004",
+      "signups": "158",
+      "revenue_inr": "3753"
+    },
+    {
+      "day": "2026-03-21",
+      "spend_inr": "3148.1600000000003",
+      "signups": "146",
+      "revenue_inr": "2755"
+    },
+    {
+      "day": "2026-03-22",
+      "spend_inr": "3235.61",
+      "signups": "147",
+      "revenue_inr": "3753"
+    },
+    {
+      "day": "2026-03-23",
+      "spend_inr": "3837.5",
+      "signups": "163",
+      "revenue_inr": "4500"
+    },
+    {
+      "day": "2026-03-24",
+      "spend_inr": "3687.09",
+      "signups": "168",
+      "revenue_inr": "3000"
+    },
+    {
+      "day": "2026-03-25",
+      "spend_inr": "4047.9900000000002",
+      "signups": "180",
+      "revenue_inr": "4004"
+    },
+    {
+      "day": "2026-03-26",
+      "spend_inr": "4138.37",
+      "signups": "196",
+      "revenue_inr": "6000"
+    },
+    {
+      "day": "2026-03-27",
+      "spend_inr": "4693.89",
+      "signups": "192",
+      "revenue_inr": "5005"
+    },
+    {
+      "day": "2026-03-28",
+      "spend_inr": "3696.1600000000003",
+      "signups": "169",
+      "revenue_inr": "4007"
+    },
+    {
+      "day": "2026-03-29",
+      "spend_inr": "3395.28",
+      "signups": "155",
+      "revenue_inr": "3251"
+    },
+    {
+      "day": "2026-03-30",
+      "spend_inr": "4115.4",
+      "signups": "172",
+      "revenue_inr": "4258"
+    },
+    {
+      "day": "2026-03-31",
+      "spend_inr": "4648.6900000000005",
+      "signups": "201",
+      "revenue_inr": "4512"
+    },
+    {
+      "day": "2026-04-01",
+      "spend_inr": "4108.48",
+      "signups": "179",
+      "revenue_inr": "5256"
+    },
+    {
+      "day": "2026-04-02",
+      "spend_inr": "3712.0",
+      "signups": "163",
+      "revenue_inr": "3750"
+    },
+    {
+      "day": "2026-04-03",
+      "spend_inr": "4618.13",
+      "signups": "209",
+      "revenue_inr": "5501"
+    },
+    {
+      "day": "2026-04-04",
+      "spend_inr": "4299.96",
+      "signups": "186",
+      "revenue_inr": "8014"
+    },
+    {
+      "day": "2026-04-05",
+      "spend_inr": "4812.6200000000008",
+      "signups": "195",
+      "revenue_inr": "4503"
+    },
+    {
+      "day": "2026-04-06",
+      "spend_inr": "4103.0599999999995",
+      "signups": "186",
+      "revenue_inr": "3003"
+    },
+    {
+      "day": "2026-04-07",
+      "spend_inr": "4141.45",
+      "signups": "185",
+      "revenue_inr": "5507"
+    },
+    {
+      "day": "2026-04-08",
+      "spend_inr": "4848.41",
+      "signups": "205",
+      "revenue_inr": "4255"
+    },
+    {
+      "day": "2026-04-09",
+      "spend_inr": "4985.4099999999989",
+      "signups": "202",
+      "revenue_inr": "5256"
+    },
+    {
+      "day": "2026-04-10",
+      "spend_inr": "4864.3",
+      "signups": "217",
+      "revenue_inr": "5504"
+    },
+    {
+      "day": "2026-04-11",
+      "spend_inr": "4820.38",
+      "signups": "214",
+      "revenue_inr": "5005"
+    },
+    {
+      "day": "2026-04-12",
+      "spend_inr": "3731.97",
+      "signups": "164",
+      "revenue_inr": "4261"
+    },
+    {
+      "day": "2026-04-13",
+      "spend_inr": "4748.54",
+      "signups": "189",
+      "revenue_inr": "4013"
+    },
+    {
+      "day": "2026-04-14",
+      "spend_inr": "4888.91",
+      "signups": "208",
+      "revenue_inr": "4754"
+    },
+    {
+      "day": "2026-04-15",
+      "spend_inr": "4586.49",
+      "signups": "202",
+      "revenue_inr": "5755"
+    },
+    {
+      "day": "2026-04-16",
+      "spend_inr": "4388.8",
+      "signups": "206",
+      "revenue_inr": "6514"
+    },
+    {
+      "day": "2026-04-17",
+      "spend_inr": "4141.09",
+      "signups": "194",
+      "revenue_inr": "5755"
+    },
+    {
+      "day": "2026-04-18",
+      "spend_inr": "4715.6999999999989",
+      "signups": "211",
+      "revenue_inr": "6012"
+    },
+    {
+      "day": "2026-04-19",
+      "spend_inr": "4135.71",
+      "signups": "186",
+      "revenue_inr": "4751"
+    },
+    {
+      "day": "2026-04-20",
+      "spend_inr": "4616.04",
+      "signups": "213",
+      "revenue_inr": "4261"
+    },
+    {
+      "day": "2026-04-21",
+      "spend_inr": "4799.7300000000005",
+      "signups": "210",
+      "revenue_inr": "5259"
+    },
+    {
+      "day": "2026-04-22",
+      "spend_inr": "4827.5999999999995",
+      "signups": "210",
+      "revenue_inr": "5256"
+    },
+    {
+      "day": "2026-04-23",
+      "spend_inr": "4890.25",
+      "signups": "211",
+      "revenue_inr": "3505"
+    },
+    {
+      "day": "2026-04-24",
+      "spend_inr": "5008.0299999999988",
+      "signups": "218",
+      "revenue_inr": "4007"
+    },
+    {
+      "day": "2026-04-25",
+      "spend_inr": "5524.1399999999994",
+      "signups": "229",
+      "revenue_inr": "6257"
+    },
+    {
+      "day": "2026-04-26",
+      "spend_inr": "4802.31",
+      "signups": "206",
+      "revenue_inr": "4503"
+    },
+    {
+      "day": "2026-04-27",
+      "spend_inr": "5418.01",
+      "signups": "223",
+      "revenue_inr": "5507"
+    },
+    {
+      "day": "2026-04-28",
+      "spend_inr": "5061.31",
+      "signups": "205",
+      "revenue_inr": "4503"
+    },
+    {
+      "day": "2026-04-29",
+      "spend_inr": "5070.67",
+      "signups": "211",
+      "revenue_inr": "5501"
+    },
+    {
+      "day": "2026-04-30",
+      "spend_inr": "4088.79",
+      "signups": "177",
+      "revenue_inr": "3750"
+    },
+    {
+      "day": "2026-05-01",
+      "spend_inr": "5275.2000000000007",
+      "signups": "234",
+      "revenue_inr": "3753"
+    },
+    {
+      "day": "2026-05-02",
+      "spend_inr": "5309.34",
+      "signups": "244",
+      "revenue_inr": "7001"
+    },
+    {
+      "day": "2026-05-03",
+      "spend_inr": "5703.6900000000005",
+      "signups": "245",
+      "revenue_inr": "6260"
+    },
+    {
+      "day": "2026-05-04",
+      "spend_inr": "6102.25",
+      "signups": "235",
+      "revenue_inr": "5758"
+    },
+    {
+      "day": "2026-05-05",
+      "spend_inr": "5942.36",
+      "signups": "260",
+      "revenue_inr": "7004"
+    },
+    {
+      "day": "2026-05-06",
+      "spend_inr": "5388.27",
+      "signups": "232",
+      "revenue_inr": "5504"
+    },
+    {
+      "day": "2026-05-07",
+      "spend_inr": "4530.17",
+      "signups": "205",
+      "revenue_inr": "6003"
+    },
+    {
+      "day": "2026-05-08",
+      "spend_inr": "5845.0499999999993",
+      "signups": "242",
+      "revenue_inr": "4506"
+    },
+    {
+      "day": "2026-05-09",
+      "spend_inr": "5857.4800000000005",
+      "signups": "264",
+      "revenue_inr": "7252"
+    },
+    {
+      "day": "2026-05-10",
+      "spend_inr": "5815.7699999999995",
+      "signups": "237",
+      "revenue_inr": "5504"
+    },
+    {
+      "day": "2026-05-11",
+      "spend_inr": "5553.51",
+      "signups": "249",
+      "revenue_inr": "7518"
+    },
+    {
+      "day": "2026-05-12",
+      "spend_inr": "5720.1900000000005",
+      "signups": "241",
+      "revenue_inr": "7509"
+    },
+    {
+      "day": "2026-05-13",
+      "spend_inr": "5928.4999999999991",
+      "signups": "254",
+      "revenue_inr": "7252"
+    },
+    {
+      "day": "2026-05-14",
+      "spend_inr": "6492.28",
+      "signups": "268",
+      "revenue_inr": "6502"
+    },
+    {
+      "day": "2026-05-15",
+      "spend_inr": "6153.4900000000007",
+      "signups": "287",
+      "revenue_inr": "8516"
+    },
+    {
+      "day": "2026-05-16",
+      "spend_inr": "5737.03",
+      "signups": "250",
+      "revenue_inr": "7007"
+    },
+    {
+      "day": "2026-05-17",
+      "spend_inr": "5693.3700000000008",
+      "signups": "260",
+      "revenue_inr": "6756"
+    },
+    {
+      "day": "2026-05-18",
+      "spend_inr": "5642.0599999999995",
+      "signups": "241",
+      "revenue_inr": "6015"
+    },
+    {
+      "day": "2026-05-19",
+      "spend_inr": "4992.6",
+      "signups": "227",
+      "revenue_inr": "5510"
+    },
+    {
+      "day": "2026-05-20",
+      "spend_inr": "5601.4499999999989",
+      "signups": "238",
+      "revenue_inr": "5250"
+    },
+    {
+      "day": "2026-05-21",
+      "spend_inr": "6183.09",
+      "signups": "278",
+      "revenue_inr": "4754"
+    },
+    {
+      "day": "2026-05-22",
+      "spend_inr": "6199.1500000000005",
+      "signups": "252",
+      "revenue_inr": "7509"
+    },
+    {
+      "day": "2026-05-23",
+      "spend_inr": "5661.6900000000005",
+      "signups": "259",
+      "revenue_inr": "7512"
+    },
+    {
+      "day": "2026-05-24",
+      "spend_inr": "6246.6900000000005",
+      "signups": "266",
+      "revenue_inr": "5755"
+    },
+    {
+      "day": "2026-05-25",
+      "spend_inr": "5790.37",
+      "signups": "245",
+      "revenue_inr": "7004"
+    },
+    {
+      "day": "2026-05-26",
+      "spend_inr": "5909.5199999999995",
+      "signups": "247",
+      "revenue_inr": "7010"
+    },
+    {
+      "day": "2026-05-27",
+      "spend_inr": "5633.62",
+      "signups": "246",
+      "revenue_inr": "7506"
+    },
+    {
+      "day": "2026-05-28",
+      "spend_inr": "6523.95",
+      "signups": "276",
+      "revenue_inr": "5761"
+    },
+    {
+      "day": "2026-05-29",
+      "spend_inr": "6502.68",
+      "signups": "287",
+      "revenue_inr": "7509"
+    },
+    {
+      "day": "2026-05-30",
+      "spend_inr": "7073.38",
+      "signups": "297",
+      "revenue_inr": "4264"
+    },
+    {
+      "day": "2026-05-31",
+      "spend_inr": "5733.4499999999989",
+      "signups": "252",
+      "revenue_inr": "5755"
+    },
+    {
+      "day": "2026-06-01",
+      "spend_inr": "7224.4699999999993",
+      "signups": "290",
+      "revenue_inr": "950800"
+    },
+    {
+      "day": "2026-06-02",
+      "spend_inr": "6465.8200000000006",
+      "signups": "269",
+      "revenue_inr": "725800"
+    },
+    {
+      "day": "2026-06-03",
+      "spend_inr": "5553.74",
+      "signups": "266",
+      "revenue_inr": "576100"
+    },
+    {
+      "day": "2026-06-04",
+      "spend_inr": "7789.48",
+      "signups": "302",
+      "revenue_inr": "550700"
+    },
+    {
+      "day": "2026-06-05",
+      "spend_inr": "6401.43",
+      "signups": "294",
+      "revenue_inr": "825300"
+    },
+    {
+      "day": "2026-06-06",
+      "spend_inr": "6251.4099999999989",
+      "signups": "281",
+      "revenue_inr": "550700"
+    },
+    {
+      "day": "2026-06-07",
+      "spend_inr": "6218.7000000000007",
+      "signups": "279",
+      "revenue_inr": "600000"
+    },
+    {
+      "day": "2026-06-08",
+      "spend_inr": "6510.66",
+      "signups": "261",
+      "revenue_inr": "624800"
+    },
+    {
+      "day": "2026-06-09",
+      "spend_inr": "6242.1900000000005",
+      "signups": "273",
+      "revenue_inr": "626300"
+    },
+    {
+      "day": "2026-06-10",
+      "spend_inr": "7619.9",
+      "signups": "310",
+      "revenue_inr": "675300"
+    },
+    {
+      "day": "2026-06-11",
+      "spend_inr": "6852.18",
+      "signups": "291",
+      "revenue_inr": "651400"
+    },
+    {
+      "day": "2026-06-12",
+      "spend_inr": "5791.54",
+      "signups": "269",
+      "revenue_inr": "650800"
+    },
+    {
+      "day": "2026-06-13",
+      "spend_inr": "7299.14",
+      "signups": "295",
+      "revenue_inr": "650800"
+    },
+    {
+      "day": "2026-06-14",
+      "spend_inr": "6733.1499999999987",
+      "signups": "257",
+      "revenue_inr": "625400"
+    },
+    {
+      "day": "2026-06-15",
+      "spend_inr": "7244.08",
+      "signups": "294",
+      "revenue_inr": "800800"
+    },
+    {
+      "day": "2026-06-16",
+      "spend_inr": "6905.16",
+      "signups": "301",
+      "revenue_inr": "825900"
+    },
+    {
+      "day": "2026-06-17",
+      "spend_inr": "6654.3899999999994",
+      "signups": "298",
+      "revenue_inr": "500500"
+    },
+    {
+      "day": "2026-06-18",
+      "spend_inr": "7552.6400000000012",
+      "signups": "313",
+      "revenue_inr": "750300"
+    },
+    {
+      "day": "2026-06-19",
+      "spend_inr": "7186.84",
+      "signups": "294",
+      "revenue_inr": "876700"
+    },
+    {
+      "day": "2026-06-20",
+      "spend_inr": "7522.03",
+      "signups": "307",
+      "revenue_inr": "851300"
+    },
+    {
+      "day": "2026-06-21",
+      "spend_inr": "7052.43",
+      "signups": "298",
+      "revenue_inr": "675600"
+    },
+    {
+      "day": "2026-06-22",
+      "spend_inr": "7243.7800000000007",
+      "signups": "300",
+      "revenue_inr": "727000"
+    },
+    {
+      "day": "2026-06-23",
+      "spend_inr": "6086.01",
+      "signups": "272",
+      "revenue_inr": "976500"
+    },
+    {
+      "day": "2026-06-24",
+      "spend_inr": "8697.57",
+      "signups": "329",
+      "revenue_inr": "950800"
+    },
+    {
+      "day": "2026-06-25",
+      "spend_inr": "6671.6299999999992",
+      "signups": "290",
+      "revenue_inr": "651100"
+    },
+    {
+      "day": "2026-06-26",
+      "spend_inr": "6704.7199999999993",
+      "signups": "316",
+      "revenue_inr": "776300"
+    },
+    {
+      "day": "2026-06-27",
+      "spend_inr": "6977.57",
+      "signups": "311",
+      "revenue_inr": "775700"
+    },
+    {
+      "day": "2026-06-28",
+      "spend_inr": "7660.0099999999993",
+      "signups": "301",
+      "revenue_inr": "550700"
+    },
+    {
+      "day": "2026-06-29",
+      "spend_inr": "7412.67",
+      "signups": "314",
+      "revenue_inr": "725800"
+    },
+    {
+      "day": "2026-06-30",
+      "spend_inr": "8284.54",
+      "signups": "326",
+      "revenue_inr": "626600"
+    },
+    {
+      "day": "2026-07-01",
+      "spend_inr": "8083.13",
+      "signups": "345",
+      "revenue_inr": "726100"
+    },
+    {
+      "day": "2026-07-02",
+      "spend_inr": "7492.1",
+      "signups": "336",
+      "revenue_inr": "1150700"
+    },
+    {
+      "day": "2026-07-03",
+      "spend_inr": "7064.1",
+      "signups": "314",
+      "revenue_inr": "701000"
+    },
+    {
+      "day": "2026-07-04",
+      "spend_inr": "7580.18",
+      "signups": "326",
+      "revenue_inr": "1151300"
+    },
+    {
+      "day": "2026-07-05",
+      "spend_inr": "7702.9599999999991",
+      "signups": "337",
+      "revenue_inr": "875200"
+    },
+    {
+      "day": "2026-07-06",
+      "spend_inr": "8141.77",
+      "signups": "330",
+      "revenue_inr": "1200000"
+    },
+    {
+      "day": "2026-07-07",
+      "spend_inr": "7758.4800000000005",
+      "signups": "329",
+      "revenue_inr": "775700"
+    },
+    {
+      "day": "2026-07-08",
+      "spend_inr": "7765.41",
+      "signups": "333",
+      "revenue_inr": "1075100"
+    },
+    {
+      "day": "2026-07-09",
+      "spend_inr": "8296.28",
+      "signups": "370",
+      "revenue_inr": "701600"
+    },
+    {
+      "day": "2026-07-10",
+      "spend_inr": "7165.05",
+      "signups": "292",
+      "revenue_inr": "575800"
+    },
+    {
+      "day": "2026-07-11",
+      "spend_inr": "8459.15",
+      "signups": "343",
+      "revenue_inr": "1101700"
+    },
+    {
+      "day": "2026-07-12",
+      "spend_inr": "7695.95",
+      "signups": "330",
+      "revenue_inr": "900900"
+    },
+    {
+      "day": "2026-07-13",
+      "spend_inr": "8009.78",
+      "signups": "335",
+      "revenue_inr": "1151600"
+    },
+    {
+      "day": "2026-07-14",
+      "spend_inr": "7206.35",
+      "signups": "329",
+      "revenue_inr": "1024900"
+    },
+    {
+      "day": "2026-07-15",
+      "spend_inr": "8096.8899999999994",
+      "signups": "347",
+      "revenue_inr": "850100"
+    },
+    {
+      "day": "2026-07-16",
+      "spend_inr": "9044.36",
+      "signups": "385",
+      "revenue_inr": "975600"
+    },
+    {
+      "day": "2026-07-17",
+      "spend_inr": "8478.34",
+      "signups": "329",
+      "revenue_inr": "650800"
+    },
+    {
+      "day": "2026-07-18",
+      "spend_inr": "7804.82",
+      "signups": "334",
+      "revenue_inr": "725200"
+    },
+    {
+      "day": "2026-07-19",
+      "spend_inr": "8404.59",
+      "signups": "354",
+      "revenue_inr": "926300"
+    },
+    {
+      "day": "2026-07-20",
+      "spend_inr": "7216.99",
+      "signups": "312",
+      "revenue_inr": "726700"
+    },
+    {
+      "day": "2026-07-21",
+      "spend_inr": "7439.54",
+      "signups": "324",
+      "revenue_inr": "601500"
+    },
+    {
+      "day": "2026-07-22",
+      "spend_inr": "7247.4000000000005",
+      "signups": "317",
+      "revenue_inr": "1101400"
+    },
+    {
+      "day": "2026-07-23",
+      "spend_inr": "8488.76",
+      "signups": "361",
+      "revenue_inr": "675900"
+    },
+    {
+      "day": "2026-07-24",
+      "spend_inr": "7675.52",
+      "signups": "336",
+      "revenue_inr": "475700"
+    },
+    {
+      "day": "2026-07-25",
+      "spend_inr": "8593.7100000000009",
+      "signups": "378",
+      "revenue_inr": "725500"
+    },
+    {
+      "day": "2026-07-26",
+      "spend_inr": "7845.94",
+      "signups": "352",
+      "revenue_inr": "675600"
+    },
+    {
+      "day": "2026-07-27",
+      "spend_inr": "8394.52",
+      "signups": "345",
+      "revenue_inr": "1001000"
+    },
+    {
+      "day": "2026-07-28",
+      "spend_inr": "8336.34",
+      "signups": "367",
+      "revenue_inr": "851000"
+    },
+    {
+      "day": "2026-07-29",
+      "spend_inr": "8573.0",
+      "signups": "358",
+      "revenue_inr": "750900"
+    },
+    {
+      "day": "2026-07-30",
+      "spend_inr": "9566.3",
+      "signups": "402",
+      "revenue_inr": "900900"
+    },
+    {
+      "day": "2026-07-31",
+      "spend_inr": "9914.0399999999991",
+      "signups": "391",
+      "revenue_inr": "876100"
+    },
+    {
+      "day": "2026-08-01",
+      "spend_inr": "8329.81",
+      "signups": "365",
+      "revenue_inr": "850100"
+    },
+    {
+      "day": "2026-08-02",
+      "spend_inr": "8163.2100000000009",
+      "signups": "350",
+      "revenue_inr": "801400"
+    },
+    {
+      "day": "2026-08-03",
+      "spend_inr": "8846.67",
+      "signups": "368",
+      "revenue_inr": "926000"
+    },
+    {
+      "day": "2026-08-04",
+      "spend_inr": "9074.05",
+      "signups": "380",
+      "revenue_inr": "1075400"
+    },
+    {
+      "day": "2026-08-05",
+      "spend_inr": "8892.130000000001",
+      "signups": "384",
+      "revenue_inr": "876400"
+    },
+    {
+      "day": "2026-08-06",
+      "spend_inr": "8246.04",
+      "signups": "356",
+      "revenue_inr": "976200"
+    },
+    {
+      "day": "2026-08-07",
+      "spend_inr": "9433.6500000000015",
+      "signups": "386",
+      "revenue_inr": "951700"
+    },
+    {
+      "day": "2026-08-08",
+      "spend_inr": "9260.44",
+      "signups": "390",
+      "revenue_inr": "1126200"
+    },
+    {
+      "day": "2026-08-09",
+      "spend_inr": "8303.75",
+      "signups": "360",
+      "revenue_inr": "750600"
+    },
+    {
+      "day": "2026-08-10",
+      "spend_inr": "10732.529999999999",
+      "signups": "403",
+      "revenue_inr": "950800"
+    },
+    {
+      "day": "2026-08-11",
+      "spend_inr": "8616.02",
+      "signups": "363",
+      "revenue_inr": "775700"
+    },
+    {
+      "day": "2026-08-12",
+      "spend_inr": "9560.619999999999",
+      "signups": "381",
+      "revenue_inr": "951400"
+    },
+    {
+      "day": "2026-08-13",
+      "spend_inr": "9249.05",
+      "signups": "390",
+      "revenue_inr": "801100"
+    },
+    {
+      "day": "2026-08-14",
+      "spend_inr": "9028.82",
+      "signups": "396",
+      "revenue_inr": "776300"
+    },
+    {
+      "day": "2026-08-15",
+      "spend_inr": "8331.61",
+      "signups": "382",
+      "revenue_inr": "1076300"
+    },
+    {
+      "day": "2026-08-16",
+      "spend_inr": "10088.59",
+      "signups": "398",
+      "revenue_inr": "1100800"
+    },
+    {
+      "day": "2026-08-17",
+      "spend_inr": "9475.2699999999986",
+      "signups": "381",
+      "revenue_inr": "976200"
+    },
+    {
+      "day": "2026-08-18",
+      "spend_inr": "9523.9",
+      "signups": "393",
+      "revenue_inr": "726400"
+    },
+    {
+      "day": "2026-08-19",
+      "spend_inr": "9618.65",
+      "signups": "396",
+      "revenue_inr": "1075400"
+    },
+    {
+      "day": "2026-08-20",
+      "spend_inr": "8803.2699999999986",
+      "signups": "379",
+      "revenue_inr": "1076000"
+    },
+    {
+      "day": "2026-08-21",
+      "spend_inr": "10156.8",
+      "signups": "426",
+      "revenue_inr": "651400"
+    },
+    {
+      "day": "2026-08-22",
+      "spend_inr": "7592.8900000000012",
+      "signups": "332",
+      "revenue_inr": "825900"
+    },
+    {
+      "day": "2026-08-23",
+      "spend_inr": "9222.09",
+      "signups": "370",
+      "revenue_inr": "851600"
+    },
+    {
+      "day": "2026-08-24",
+      "spend_inr": "9479.8",
+      "signups": "382",
+      "revenue_inr": "575800"
+    },
+    {
+      "day": "2026-08-25",
+      "spend_inr": "9756.77",
+      "signups": "426",
+      "revenue_inr": "976500"
+    },
+    {
+      "day": "2026-08-26",
+      "spend_inr": "9527.1499999999978",
+      "signups": "405",
+      "revenue_inr": "825300"
+    },
+    {
+      "day": "2026-08-27",
+      "spend_inr": "8690.69",
+      "signups": "403",
+      "revenue_inr": "950500"
+    },
+    {
+      "day": "2026-08-28",
+      "spend_inr": "10128.88",
+      "signups": "431",
+      "revenue_inr": "1275900"
+    },
+    {
+      "day": "2026-08-29",
+      "spend_inr": "9847.35",
+      "signups": "416",
+      "revenue_inr": "875200"
+    },
+    {
+      "day": "2026-08-30",
+      "spend_inr": "9074.84",
+      "signups": "398",
+      "revenue_inr": "551000"
+    },
+    {
+      "day": "2026-08-31",
+      "spend_inr": "9001.4",
+      "signups": "392",
+      "revenue_inr": "6932000"
+    },
+    {
+      "day": "2026-09-01",
+      "spend_inr": null,
+      "signups": null,
+      "revenue_inr": "0"
+    },
+    {
+      "day": "2026-09-02",
+      "spend_inr": null,
+      "signups": null,
+      "revenue_inr": "0"
+    }
+  ]
+}

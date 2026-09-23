@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "utm_campaign": "TA_Career_Broad_WA",
+      "users_with_llm_cost": 11847,
+      "total_llm_cost_usd": 3364.73,
+      "avg_cost_per_session_usd": 0.2776
+    },
+    {
+      "utm_campaign": "TA_Marriage_Lookalike",
+      "users_with_llm_cost": 9459,
+      "total_llm_cost_usd": 2674.7,
+      "avg_cost_per_session_usd": 0.2764
+    },
+    {
+      "utm_campaign": "TA_Generic_Astro_Wide",
+      "users_with_llm_cost": 10497,
+      "total_llm_cost_usd": 2529.81,
+      "avg_cost_per_session_usd": 0.2395
+    },
+    {
+      "utm_campaign": "TA_Love_Retarget_Web",
+      "users_with_llm_cost": 7016,
+      "total_llm_cost_usd": 1547.52,
+      "avg_cost_per_session_usd": 0.2155
+    },
+    {
+      "utm_campaign": "TA_Money_Interest_Web",
+      "users_with_llm_cost": 6578,
+      "total_llm_cost_usd": 1379.46,
+      "avg_cost_per_session_usd": 0.2057
+    },
+    {
+      "utm_campaign": "TA_Festival_Push_App",
+      "users_with_llm_cost": 4603,
+      "total_llm_cost_usd": 958.14,
+      "avg_cost_per_session_usd": 0.2049
+    }
+  ]
+}

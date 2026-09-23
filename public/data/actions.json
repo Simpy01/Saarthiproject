@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "period": "March\u2013August 2026"
+  },
+  "rows": [
+    {
+      "recommendation": "Investigate and test the Generic Astro funnel before scaling it",
+      "number": "2.24% chat-start \u2192 payment-success conversion",
+      "source_table": "BigQuery funnel query (chat + users)",
+      "value_if_works": "If it reached 6.76% at the same 9,769 starts: ~441 payment-success users vs 219 today, +222 users",
+      "arithmetic": "9,769 \u00d7 (6.76% \u2212 2.24%) \u2248 442 additional users",
+      "condition": "The low conversion is a real product/channel issue and can be improved without reducing traffic quality.",
+      "assumption": "This is a scenario, not a forecast; it assumes the same number of starts."
+    },
+    {
+      "recommendation": "Prioritise retention analysis before committing more acquisition budget",
+      "number": "Retention result is not currently available",
+      "source_table": "Chat + users; retention query still needs export",
+      "value_if_works": "Not quantifiable from the supplied outputs without cohort retention",
+      "arithmetic": "N/A until retention cohorts are exported",
+      "condition": "Cohort retention identifies whether paid acquisition produces durable users.",
+      "assumption": "No retention conclusion is made from the available data."
+    },
+    {
+      "recommendation": "Review Festival Push refunds before increasing spend",
+      "number": "\u20b911.32 lakh refunded on \u20b959.40 lakh gross revenue",
+      "source_table": "transaction + users revenue query",
+      "value_if_works": "Reducing refunds by 20% would retain ~\u20b92.26 lakh, if refund reduction does not reduce legitimate sales",
+      "arithmetic": "\u20b911,31,557 \u00d7 20% \u2248 \u20b92,26,311",
+      "condition": "Refunds are addressable through campaign/product quality rather than an intentional business policy.",
+      "assumption": "20% reduction is a scenario, not an expected outcome."
+    }
+  ]
+}

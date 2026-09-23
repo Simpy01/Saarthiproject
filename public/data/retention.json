@@ -1,0 +1,120 @@
+[{
+  "cohort_month": "2026-03-01",
+  "activity_month": "2026-03-01",
+  "months_since_acquisition": "0",
+  "active_users": "4435",
+  "cohort_users": "4435",
+  "retention_rate": "1.0"
+}, {
+  "cohort_month": "2026-03-01",
+  "activity_month": "2026-04-01",
+  "months_since_acquisition": "1",
+  "active_users": "28",
+  "cohort_users": "4435",
+  "retention_rate": "0.0063134160090191661"
+}, {
+  "cohort_month": "2026-03-01",
+  "activity_month": "2026-05-01",
+  "months_since_acquisition": "2",
+  "active_users": "37",
+  "cohort_users": "4435",
+  "retention_rate": "0.00834272829763247"
+}, {
+  "cohort_month": "2026-04-01",
+  "activity_month": "2026-04-01",
+  "months_since_acquisition": "0",
+  "active_users": "5583",
+  "cohort_users": "5583",
+  "retention_rate": "1.0"
+}, {
+  "cohort_month": "2026-04-01",
+  "activity_month": "2026-05-01",
+  "months_since_acquisition": "1",
+  "active_users": "51",
+  "cohort_users": "5583",
+  "retention_rate": "0.009134873723804407"
+}, {
+  "cohort_month": "2026-04-01",
+  "activity_month": "2026-06-01",
+  "months_since_acquisition": "2",
+  "active_users": "29",
+  "cohort_users": "5583",
+  "retention_rate": "0.005194339960594662"
+}, {
+  "cohort_month": "2026-04-01",
+  "activity_month": "2026-07-01",
+  "months_since_acquisition": "3",
+  "active_users": "1",
+  "cohort_users": "5583",
+  "retention_rate": "0.00017911517105498835"
+}, {
+  "cohort_month": "2026-05-01",
+  "activity_month": "2026-05-01",
+  "months_since_acquisition": "0",
+  "active_users": "7276",
+  "cohort_users": "7276",
+  "retention_rate": "1.0"
+}, {
+  "cohort_month": "2026-05-01",
+  "activity_month": "2026-06-01",
+  "months_since_acquisition": "1",
+  "active_users": "55",
+  "cohort_users": "7276",
+  "retention_rate": "0.0075590984057174269"
+}, {
+  "cohort_month": "2026-05-01",
+  "activity_month": "2026-07-01",
+  "months_since_acquisition": "2",
+  "active_users": "65",
+  "cohort_users": "7276",
+  "retention_rate": "0.0089334799340296863"
+}, {
+  "cohort_month": "2026-05-01",
+  "activity_month": "2026-08-01",
+  "months_since_acquisition": "3",
+  "active_users": "1",
+  "cohort_users": "7276",
+  "retention_rate": "0.00013743815283122595"
+}, {
+  "cohort_month": "2026-06-01",
+  "activity_month": "2026-06-01",
+  "months_since_acquisition": "0",
+  "active_users": "8178",
+  "cohort_users": "8178",
+  "retention_rate": "1.0"
+}, {
+  "cohort_month": "2026-06-01",
+  "activity_month": "2026-07-01",
+  "months_since_acquisition": "1",
+  "active_users": "63",
+  "cohort_users": "8178",
+  "retention_rate": "0.0077035950110051358"
+}, {
+  "cohort_month": "2026-06-01",
+  "activity_month": "2026-08-01",
+  "months_since_acquisition": "2",
+  "active_users": "49",
+  "cohort_users": "8178",
+  "retention_rate": "0.00599168500855955"
+}, {
+  "cohort_month": "2026-07-01",
+  "activity_month": "2026-07-01",
+  "months_since_acquisition": "0",
+  "active_users": "9895",
+  "cohort_users": "9895",
+  "retention_rate": "1.0"
+}, {
+  "cohort_month": "2026-07-01",
+  "activity_month": "2026-08-01",
+  "months_since_acquisition": "1",
+  "active_users": "141",
+  "cohort_users": "9895",
+  "retention_rate": "0.014249621020717534"
+}, {
+  "cohort_month": "2026-08-01",
+  "activity_month": "2026-08-01",
+  "months_since_acquisition": "0",
+  "active_users": "11143",
+  "cohort_users": "11143",
+  "retention_rate": "1.0"
+}]
