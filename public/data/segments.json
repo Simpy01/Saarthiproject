@@ -1,0 +1,17 @@
+{
+  "meta": { "period": "March–August 2026", "source": "BigQuery segment conversion result" },
+  "rows": [
+    { "segment_type": "device", "name": "iOS", "signups": 6489, "payers": 637, "paid_conv_pct": 9.82 },
+    { "segment_type": "device", "name": "Desktop", "signups": 4500, "payers": 304, "paid_conv_pct": 6.76 },
+    { "segment_type": "device", "name": "Android", "signups": 39011, "payers": 2291, "paid_conv_pct": 5.87 },
+    { "segment_type": "city", "name": "Delhi", "signups": 8516, "payers": 647, "paid_conv_pct": 7.6 },
+    { "segment_type": "city", "name": "Bengaluru", "signups": 5379, "payers": 406, "paid_conv_pct": 7.55 },
+    { "segment_type": "city", "name": "Mumbai", "signups": 7105, "payers": 509, "paid_conv_pct": 7.16 },
+    { "segment_type": "city", "name": "Pune", "signups": 4510, "payers": 322, "paid_conv_pct": 7.14 },
+    { "segment_type": "city", "name": "Patna", "signups": 3928, "payers": 234, "paid_conv_pct": 5.96 },
+    { "segment_type": "city", "name": "Kanpur", "signups": 4027, "payers": 227, "paid_conv_pct": 5.64 },
+    { "segment_type": "language", "name": "Hinglish", "signups": 29170, "payers": 2152, "paid_conv_pct": 7.38 },
+    { "segment_type": "language", "name": "Hindi", "signups": 15520, "payers": 883, "paid_conv_pct": 5.69 },
+    { "segment_type": "language", "name": "English", "signups": 5310, "payers": 197, "paid_conv_pct": 3.71 }
+  ]
+}

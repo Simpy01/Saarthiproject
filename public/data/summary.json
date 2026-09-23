@@ -1,0 +1,14 @@
+{
+  "meta": { "period": "March–August 2026", "source": "BigQuery executive totals result" },
+  "rows": [
+    {
+      "spend_inr": 1170209,
+      "signups": 50000,
+      "paying_users": 3232,
+      "gross_revenue_inr": 82296384,
+      "refunded_inr": 3874442,
+      "net_revenue_inr": 78421942,
+      "llm_cost_usd": 12454
+    }
+  ]
+}

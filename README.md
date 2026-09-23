@@ -45,16 +45,18 @@ Run:
 - `05_llm_costs.sql`
 - `06_quality.sql`
 
-The dashboard is designed around the returned column names.
+The dashboard's primary source is `public/data/dashboard_data.json`, the single
+combined export supplied for the review. The app normalizes its nested sections
+into the views above; it does not recompute joins or aggregations in React.
+
+`quality.json` and `actions.json` remain separate because they are dashboard
+annotations and recommendations rather than raw query result sections.
 
 In the BigQuery console, query results can be saved/downloaded as newline-delimited JSON. Put the exported files in `public/data/` and rename them:
 
-- `funnel.json`
-- `revenue_monthly.json`
-- `channels.json`
-- `retention.json`
-- `llm_costs.json`
+- `dashboard_data.json` (combined export containing totals, funnel, campaigns, monthly, segments, retention, daily and BigQuery outputs)
 - `quality.json`
+- `actions.json`
 
 If your downloaded JSON is a raw array rather than `{ "rows": [...] }`, wrap it like:
 
@@ -110,6 +112,7 @@ Run `sql/07_query_history.sql` in BigQuery and export the result as CSV. Keep th
 ## 8. Dashboard design
 
 Tab 1:
+
 - KPI cards
 - funnel
 - monthly net revenue
@@ -119,9 +122,14 @@ Tab 1:
 - data quality/limitations
 
 Tab 2:
+
 - up to three evidence-based actions
 - explicit arithmetic
 - conditions and assumptions
 - what not to do / what cannot be determined
 
 Every chart/table has a title and analysis period.
+
+The overall funnel, device/city/language conversion, and retention signal are
+loaded from their own exported query results. They are not defined as business
+data constants in `src/App.jsx`.

@@ -1,0 +1,13 @@
+{
+  "meta": { "period": "March–August 2026", "source": "BigQuery overall funnel result" },
+  "rows": [
+    {
+      "chat_started": 46510,
+      "profile_started": 33002,
+      "profile_completed": 18652,
+      "paywall_shown": 16549,
+      "payment_started": 4466,
+      "payment_success": 3146
+    }
+  ]
+}

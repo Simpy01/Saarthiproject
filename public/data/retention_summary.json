@@ -1,0 +1,13 @@
+{
+  "meta": { "period": "March–August 2026", "source": "BigQuery retention summary result" },
+  "rows": [
+    {
+      "total_users": 46510,
+      "one_session_pct": 98.3,
+      "two_plus_sessions": 796,
+      "repeat_session_rate_pct": 1.71,
+      "repeat_purchase_rate_pct": 19.83,
+      "returners_who_repurchased_pct": 80.5
+    }
+  ]
+}

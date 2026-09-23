@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Area,
   AreaChart,
@@ -28,6 +28,91 @@ async function load(name) {
   const value = await response.json();
   return Array.isArray(value) ? { meta: {}, rows: value } : value;
 }
+const shortCampaign = (name) =>
+  String(name || "")
+    .replace("TA_", "")
+    .replace("_Broad_WA", "")
+    .replace("_Lookalike", "")
+    .replace("_Retarget_Web", "")
+    .replace("_Interest_Web", "")
+    .replace("_Push_App", "")
+    .replace("_Generic", "")
+    .replaceAll("_", " ");
+async function loadDashboardSource() {
+  const response = await fetch("/data/dashboard_data.json");
+  if (!response.ok) throw Error("Missing dashboard_data.json");
+  const raw = await response.json();
+  const campaignRows = (raw.campaign_rows || []).map((row) => ({
+    utm_campaign: row[0],
+    spend_inr: row[1],
+    signups: row[2],
+    paying_users: row[3],
+    paid_conv_pct: row[4],
+    gross_revenue_inr: row[5],
+    refunded_inr: row[6],
+    refund_rate_pct: row[7],
+    cac_per_signup_inr: row[8],
+    cac_per_paying_user_inr: row[9],
+  }));
+  const funnelRows = (raw.bigquery_outputs?.funnel_by_campaign || []).map(
+    (row) => ({ ...row, utm_campaign: shortCampaign(row.utm_campaign) }),
+  );
+  const llmRows = (raw.bigquery_outputs?.llm_by_campaign || []).map((row) => ({
+    ...row,
+    utm_campaign: shortCampaign(row.utm_campaign),
+  }));
+  return {
+    channels: { rows: campaignRows },
+    funnel: { rows: funnelRows },
+    funnel_overall: {
+      rows: [
+        Object.fromEntries(
+          (raw.funnel_steps || []).map((step, index) => [
+            step.toLowerCase().replaceAll(" ", "_"),
+            raw.overall_funnel?.[index],
+          ]),
+        ),
+      ],
+    },
+    segments: {
+      rows: Object.entries(raw.segments || {}).flatMap(([segmentType, rows]) =>
+        rows.map(([name, signups, payers, paidConvPct]) => ({
+          segment_type: segmentType,
+          name,
+          signups,
+          payers,
+          paid_conv_pct: paidConvPct,
+        })),
+      ),
+    },
+    retention_summary: { rows: [raw.retention || {}] },
+    revenue_monthly: {
+      rows: campaignRows.map(
+        ({ utm_campaign, gross_revenue_inr, refunded_inr }) => ({
+          utm_campaign,
+          gross_revenue_inr,
+          refunded_inr,
+          net_revenue_inr: gross_revenue_inr - refunded_inr,
+        }),
+      ),
+    },
+    daily_trend: { rows: raw.daily || [] },
+    llm_costs: { rows: llmRows },
+    summary: {
+      rows: [
+        {
+          spend_inr: raw.totals?.spend,
+          signups: raw.totals?.signups,
+          paying_users: raw.totals?.paying,
+          gross_revenue_inr: raw.totals?.gross_rev,
+          refunded_inr: raw.totals?.refunded,
+          net_revenue_inr: raw.totals?.net_rev,
+          llm_cost_usd: raw.totals?.llm_cost,
+        },
+      ],
+    },
+  };
+}
 const money = (n) =>
   n == null
     ? "—"
@@ -42,26 +127,6 @@ const crore = (n) =>
 const number = (n) =>
   n == null ? "—" : new Intl.NumberFormat("en-IN").format(Number(n));
 const percent = (n) => `${Number(n).toFixed(2)}%`;
-const segmentData = {
-  device: [
-    ["iOS", 6489, 637, 9.82],
-    ["Desktop", 4500, 304, 6.76],
-    ["Android", 39011, 2291, 5.87],
-  ],
-  city: [
-    ["Delhi", 8516, 647, 7.6],
-    ["Bengaluru", 5379, 406, 7.55],
-    ["Mumbai", 7105, 509, 7.16],
-    ["Pune", 4510, 322, 7.14],
-    ["Patna", 3928, 234, 5.96],
-    ["Kanpur", 4027, 227, 5.64],
-  ],
-  language: [
-    ["Hinglish", 29170, 2152, 7.38],
-    ["Hindi", 15520, 883, 5.69],
-    ["English", 5310, 197, 3.71],
-  ],
-};
 function Section({ title, eyebrow, children, className = "" }) {
   return (
     <section className={`section ${className}`}>
@@ -129,57 +194,59 @@ function App() {
     revenue_monthly: empty,
     daily_trend: empty,
     retention: empty,
+    retention_summary: empty,
+    funnel_overall: empty,
+    segments: empty,
+    summary: empty,
     llm_costs: empty,
     quality: empty,
     actions: empty,
   });
   const [error, setError] = useState("");
   useEffect(() => {
-    Promise.all(Object.keys(data).map(async (key) => [key, await load(key)]))
-      .then((entries) => setData(Object.fromEntries(entries)))
+    Promise.all([loadDashboardSource(), load("quality"), load("actions")])
+      .then(([source, quality, actions]) =>
+        setData({ ...source, quality, actions }),
+      )
       .catch((e) => setError(e.message));
   }, []);
   const period = "1 Mar – 31 Aug 2026";
   const channels = data.channels.rows || [],
     funnel = data.funnel.rows || [],
+    funnelOverall = data.funnel_overall.rows?.[0] || {},
+    segmentRows = data.segments.rows || [],
+    retentionSummary = data.retention_summary.rows?.[0] || {},
     revenue = data.revenue_monthly.rows || [],
+    llm = data.llm_costs.rows || [],
+    totals = data.summary.rows?.[0] || {},
     daily = (data.daily_trend.rows || []).filter(
       (row) => !String(row.day).startsWith("2026-09"),
     );
-  const totals = useMemo(
-    () => ({
-      spend: channels.reduce((sum, row) => sum + Number(row.spend_inr || 0), 0),
-      signups: channels.reduce((sum, row) => sum + Number(row.signups || 0), 0),
-      paying: channels.reduce(
-        (sum, row) => sum + Number(row.paying_users || 0),
-        0,
-      ),
-      gross: revenue.reduce(
-        (sum, row) => sum + Number(row.gross_revenue_inr || 0),
-        0,
-      ),
-      refunds: revenue.reduce(
-        (sum, row) => sum + Number(row.refunded_inr || 0),
-        0,
-      ),
-      net: revenue.reduce(
-        (sum, row) => sum + Number(row.net_revenue_inr || 0),
-        0,
-      ),
-    }),
-    [channels, revenue],
-  );
-  const refundRate = totals.gross ? (totals.refunds / totals.gross) * 100 : 0;
-  const displayCampaign = (name) =>
-    name
-      .replace("TA_", "")
-      .replace("_Broad_WA", "")
-      .replace("_Lookalike", "")
-      .replace("_Retarget_Web", "")
-      .replace("_Interest_Web", "")
-      .replace("_Push_App", "")
-      .replace("_Generic", "")
-      .replaceAll("_", " ");
+  const refundRate = totals.gross_revenue_inr
+    ? (totals.refunded_inr / totals.gross_revenue_inr) * 100
+    : 0;
+  const displayCampaign = shortCampaign;
+  const segmentData = {
+    device: segmentRows
+      .filter((row) => row.segment_type === "device")
+      .map((row) => [row.name, row.signups, row.payers, row.paid_conv_pct]),
+    city: segmentRows
+      .filter((row) => row.segment_type === "city")
+      .map((row) => [row.name, row.signups, row.payers, row.paid_conv_pct]),
+    language: segmentRows
+      .filter((row) => row.segment_type === "language")
+      .map((row) => [row.name, row.signups, row.payers, row.paid_conv_pct]),
+  };
+  const android = segmentData.device.find((row) => row[0] === "Android");
+  const ios = segmentData.device.find((row) => row[0] === "iOS");
+  const funnelSteps = [
+    ["Chat started", Number(funnelOverall.chat_started || 0)],
+    ["Profile started", Number(funnelOverall.profile_started || 0)],
+    ["Profile completed", Number(funnelOverall.profile_completed || 0)],
+    ["Paywall shown", Number(funnelOverall.paywall_shown || 0)],
+    ["Payment started", Number(funnelOverall.payment_started || 0)],
+    ["Payment success", Number(funnelOverall.payment_success || 0)],
+  ];
   return (
     <div className="app">
       <header className="topbar">
@@ -254,49 +321,63 @@ function App() {
             <Kpi
               icon={CheckCircle2}
               label="Paid conversion"
-              value={percent((totals.paying / totals.signups) * 100)}
-              note={`${number(totals.paying)} paying users`}
+              value={percent((totals.paying_users / totals.signups) * 100)}
+              note={`${number(totals.paying_users)} paying users`}
               tone="teal"
             />
             <Kpi
               icon={CircleDollarSign}
               label="Ad spend"
-              value={lakh(totals.spend)}
+              value={lakh(totals.spend_inr)}
               note="Meta, all campaigns"
               tone="amber"
             />
             <Kpi
+              icon={CircleDollarSign}
+              label="Gross revenue"
+              value={crore(totals.gross_revenue_inr)}
+              note="Successful payments"
+              tone="teal"
+            />
+            <Kpi
               icon={WalletCards}
               label="Net revenue"
-              value={crore(totals.net)}
-              note={`${lakh(totals.refunds)} refunded · ${percent(refundRate)} of gross`}
+              value={crore(totals.net_revenue_inr)}
+              note={`${lakh(totals.refunded_inr)} refunded · ${percent(refundRate)} of gross`}
               tone="coral"
+            />
+            <Kpi
+              icon={WalletCards}
+              label="Refunded"
+              value={lakh(totals.refunded_inr)}
+              note={`${percent(refundRate)} of gross revenue`}
+              tone="coral"
+            />
+            <Kpi
+              icon={CircleDollarSign}
+              label="LLM cost"
+              value={`$${number(totals.llm_cost_usd)}`}
+              note="Model spend · 6 months"
+              tone="amber"
             />
           </div>
           <div className="dashboard-grid">
             <Section title="Signup to paid" eyebrow="01 / FUNNEL">
               <div className="funnel">
                 <div className="funnel-intro">
-                  <strong>46,510</strong>
+                  <strong>{number(funnelSteps[0][1])}</strong>
                   <span>chat-start users</span>
                   <p>
                     Payment-success users are event-based; the headline payer
                     KPI uses deduplicated successful transactions.
                   </p>
                 </div>
-                {[
-                  ["Chat started", 46510],
-                  ["Profile started", 33002],
-                  ["Profile completed", 18652],
-                  ["Paywall shown", 16549],
-                  ["Payment started", 4466],
-                  ["Payment success", 3146],
-                ].map(([label, value], index) => (
+                {funnelSteps.map(([label, value], index) => (
                   <div className="funnel-step" key={label}>
                     <div
                       className="funnel-bar"
                       style={{
-                        width: `${Math.max(12, (value / 46510) * 100)}%`,
+                        width: `${Math.max(12, (value / (funnelSteps[0][1] || 1)) * 100)}%`,
                       }}
                     >
                       <span>{label}</span>
@@ -305,15 +386,12 @@ function App() {
                     {index < 5 && (
                       <small>
                         −
-                        {index === 0
-                          ? 29
-                          : index === 1
-                            ? 43
-                            : index === 2
-                              ? 11
-                              : index === 3
-                                ? 73
-                                : 30}
+                        {value && funnelSteps[index + 1]
+                          ? Math.round(
+                              ((value - funnelSteps[index + 1][1]) / value) *
+                                100,
+                            )
+                          : 0}
                         %
                       </small>
                     )}
@@ -461,17 +539,21 @@ function App() {
           <div className="two-col">
             <Section title="Limited retention signal" eyebrow="04 / RETENTION">
               <div className="retention-stat">
-                <strong>98.3%</strong>
+                <strong>{percent(retentionSummary.one_session_pct)}</strong>
                 <span>one-session users</span>
               </div>
               <p>
-                There is no meaningful week-1 / week-4 cohort curve here. Of the
-                796 users who came back for a second session, 80.5% went on to
-                buy again.
+                There is no meaningful week-1 / week-4 cohort curve here. Of the{" "}
+                {number(retentionSummary.two_plus_sessions)} users who came back
+                for a second session,{" "}
+                {percent(retentionSummary.returners_who_repurchased_pct)} went
+                on to buy again.
               </p>
               <div className="retention-callout">
                 <strong>Returners who repurchased</strong>
-                <span>80.5%</span>
+                <span>
+                  {percent(retentionSummary.returners_who_repurchased_pct)}
+                </span>
               </div>
             </Section>
             <Section title="Who converts" eyebrow="05 / SEGMENTS">
@@ -513,9 +595,10 @@ function App() {
                 <div>
                   <strong>Android needs an audit</strong>
                   <p>
-                    Android is 78% of signups but converts at 5.87% versus iOS
-                    at 9.82%. The gap is an opportunity, not yet a causal
-                    diagnosis.
+                    Android is {percent((android?.[1] / totals.signups) * 100)}{" "}
+                    of signups but converts at {percent(android?.[3])} versus
+                    iOS at {percent(ios?.[3])}. The gap is an opportunity, not
+                    yet a causal diagnosis.
                   </p>
                 </div>
               </div>
@@ -575,10 +658,12 @@ function App() {
             <div className="section-eyebrow">A NOTE ON RETENTION</div>
             <h3>Do not build a win-back campaign yet.</h3>
             <p>
-              98.3% of users take exactly one session. That is a product or
-              expectation question before it is a push-notification problem. The
-              80.5% repurchase rate among returners says the payoff is real if
-              they come back; it does not tell us how to make them return.
+              {percent(retentionSummary.one_session_pct)} of users take exactly
+              one session. That is a product or expectation question before it
+              is a push-notification problem. The{" "}
+              {percent(retentionSummary.returners_who_repurchased_pct)}{" "}
+              repurchase rate among returners says the payoff is real if they
+              come back; it does not tell us how to make them return.
             </p>
           </div>
           <div className="open-question">
