@@ -1,12 +1,13 @@
 WITH first_chat AS (
   SELECT user_id, DATE_TRUNC(DATE(MIN(event_ts)), MONTH) AS cohort_month
-  FROM `PROJECT_ID.analytics.chat_events`
+  FROM `saarthi.chat`
   WHERE event_name = 'chat_started'
   GROUP BY user_id
+  HAVING DATE(MIN(event_ts)) BETWEEN '2026-03-01' AND '2026-08-31'
 ),
 activity AS (
   SELECT DISTINCT user_id, DATE_TRUNC(DATE(event_ts), MONTH) AS activity_month
-  FROM `PROJECT_ID.analytics.chat_events`
+  FROM `saarthi.chat`
   WHERE DATE(event_ts) BETWEEN '2026-03-01' AND '2026-08-31'
 ),
 cohort_activity AS (

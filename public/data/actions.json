@@ -1,34 +1,32 @@
 {
-  "meta": {
-    "period": "March\u2013August 2026"
-  },
+  "meta": { "period": "March–August 2026" },
   "rows": [
     {
-      "recommendation": "Investigate and test the Generic Astro funnel before scaling it",
-      "number": "2.24% chat-start \u2192 payment-success conversion",
-      "source_table": "BigQuery funnel query (chat + users)",
-      "value_if_works": "If it reached 6.76% at the same 9,769 starts: ~441 payment-success users vs 219 today, +222 users",
-      "arithmetic": "9,769 \u00d7 (6.76% \u2212 2.24%) \u2248 442 additional users",
-      "condition": "The low conversion is a real product/channel issue and can be improved without reducing traffic quality.",
-      "assumption": "This is a scenario, not a forecast; it assumes the same number of starts."
+      "recommendation": "Pull TA_Festival_Push_App off Meta and find out why 1 in 5 rupees comes back as a refund",
+      "number": "19.05% refund rate: ₹11.3L refunded on ₹59.4L sold",
+      "source_table": "Refund rate by campaign — transactions joined to users.utm_campaign",
+      "value_if_works": "≈ ₹9.2L recovered over 6 months, or ≈ ₹1.6L/month spend avoided if the campaign is paused",
+      "arithmetic": "At the other campaigns' 3.59% value-weighted refund rate, expected refunds are ≈ ₹2.13L versus ₹11.3L actual.",
+      "condition": "The spike is driven by this campaign's audience or promise and is fixable, rather than random noise.",
+      "assumption": "Refund reasons are not in the export, so the mechanism is unconfirmed."
     },
     {
-      "recommendation": "Prioritise retention analysis before committing more acquisition budget",
-      "number": "Retention result is not currently available",
-      "source_table": "Chat + users; retention query still needs export",
-      "value_if_works": "Not quantifiable from the supplied outputs without cohort retention",
-      "arithmetic": "N/A until retention cohorts are exported",
-      "condition": "Cohort retention identifies whether paid acquisition produces durable users.",
-      "assumption": "No retention conclusion is made from the available data."
+      "recommendation": "Shift ad budget out of TA_Generic_Astro_Wide into TA_Love_Retarget_Web",
+      "number": "₹418.70 CAC/payer for Astro Wide versus ₹296.62 for Love Retarget Web",
+      "source_table": "Meta spend divided by distinct successful payers from transactions joined to users",
+      "value_if_works": "≈ 95 additional paying users on the same ₹96,300 budget",
+      "arithmetic": "₹96,300 ÷ ₹296.62 ≈ 325 payers versus 230 today. The illustrative revenue read-through is ≈ ₹25L.",
+      "condition": "Love's marginal efficiency holds without saturating its smaller retargeting audience.",
+      "assumption": "The revenue scenario assumes the observed tier mix holds; it is not a forecast."
     },
     {
-      "recommendation": "Review Festival Push refunds before increasing spend",
-      "number": "\u20b911.32 lakh refunded on \u20b959.40 lakh gross revenue",
-      "source_table": "transaction + users revenue query",
-      "value_if_works": "Reducing refunds by 20% would retain ~\u20b92.26 lakh, if refund reduction does not reduce legitimate sales",
-      "arithmetic": "\u20b911,31,557 \u00d7 20% \u2248 \u20b92,26,311",
-      "condition": "Refunds are addressable through campaign/product quality rather than an intentional business policy.",
-      "assumption": "20% reduction is a scenario, not an expected outcome."
+      "recommendation": "Investigate why Android converts at 5.87% against iOS's 9.82%",
+      "number": "1,539-payer gap if Android reached iOS's rate",
+      "source_table": "Paid conversion by device — users.device joined to transactions",
+      "value_if_works": "Closing one third of the gap would add roughly 500 paying users",
+      "arithmetic": "39,011 Android signups × 9.82% ≈ 3,830 payers versus 2,291 actual.",
+      "condition": "The gap is caused by a fixable Android experience issue such as checkout friction or payment support.",
+      "assumption": "Campaign mix is similar across devices, but other confounders remain. Audit before acting."
     }
   ]
 }

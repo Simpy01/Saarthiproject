@@ -4,12 +4,12 @@
   },
   "rows": [
     {
-      "issue": "Retention",
-      "detail": "No retention result was supplied to the dashboard yet; this section is intentionally flagged rather than inferred."
-    },
-    {
       "issue": "Revenue anomaly",
       "detail": "Daily revenue jumps sharply from June onward in the supplied query output; treat this as a data-quality item to investigate before using the trend for forecasting."
+    },
+    {
+      "issue": "Channel analysis",
+      "detail": "The dashboard shows campaign-level acquisition metrics. A separate channel-level event breakdown is not included in the current export."
     },
     {
       "issue": "Scope",
